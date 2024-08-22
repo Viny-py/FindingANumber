@@ -2,7 +2,6 @@ import math, random, sys
 
 number_list = []
 
-holder = str()
 size = int(input("How many numbers in the list?\n"))
 find = input("What number would you like to find? \n(ex: 1 biggest, 3 smallest, 2 biggest)\n")
 
@@ -39,7 +38,7 @@ for i in range(size):
 new_list = sorted(list(set(number_list.copy())))
 
 #prints the original list (all random numbers in a random order)
-print(number_list)
+print(f"Original list: {number_list}")
 
 #Using the variable "find" to mention the chosen number ("10 biggest")
 # prints the chosen position of the number
